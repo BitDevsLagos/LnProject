@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --brutal-border: 3px solid #000000;
+  --brutal-shadow: 4px 4px 0px 0px #000000;
+  --brutal-shadow-hover: 2px 2px 0px 0px #000000;
+  
+  --color-main: #FFDE00; /* Vibrant Yellow */
+  --color-accent: #FF9F00; /* Orange */
+  --color-bg: #E0E7FF; /* Light Indigo */
+  --color-surface: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: #000000;
+  font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+}
+
+/* Neo-Brutalism Utilities */
+.neobrutal-box {
+  background-color: var(--color-surface);
+  border: var(--brutal-border);
+  box-shadow: var(--brutal-shadow);
+  transition: all 0.2s ease-in-out;
+}
+
+.neobrutal-box:hover {
+  transform: translate(2px, 2px);
+  box-shadow: var(--brutal-shadow-hover);
+}
+
+.neobrutal-btn {
+  background-color: var(--color-main);
+  border: var(--brutal-border);
+  box-shadow: var(--brutal-shadow);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.neobrutal-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+.neobrutal-input {
+  border: var(--brutal-border);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.1);
+  outline: none;
+}
+
+.neobrutal-input:focus {
+  box-shadow: var(--brutal-shadow);
+  background-color: #fff;
+}
